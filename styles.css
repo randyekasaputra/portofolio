@@ -708,4 +708,39 @@ h2 {
     .info {
         text-align: center;
     }
+}
+
+/* Tambahkan style untuk custom Flutter icon */
+.flutter-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+}
+
+.flutter-icon::before {
+    content: '\f3b8'; /* Menggunakan icon dasar */
+    font-family: "Font Awesome 6 Brands";
+    color: #54C5F8; /* Warna Flutter */
+    font-size: 1.2em;
+}
+
+.flutter-icon::after {
+    content: '';
+    position: absolute;
+    width: 0.5em;
+    height: 0.5em;
+    background: linear-gradient(45deg, #54C5F8, #0D47A1);
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+/* Update style untuk skill dengan Flutter icon */
+.skill i.flutter-custom {
+    background: linear-gradient(120deg, #54C5F8, #0D47A1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 } 
