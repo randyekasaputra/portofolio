@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio 3D</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div class="content">
+        <section id="intro">
+            <h1>Selamat Datang di Portofolio Saya</h1>
+            <p class="tagline">Scroll untuk menjelajahi</p>
+        </section>
+
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <div class="about-container">
+                <div class="profile-image">
+                    <img src="assets/profile.jpg" alt="Foto Profil">
+                    <!-- Ganti "assets/profile.jpg" dengan path foto Anda -->
+                </div>
+                <div class="info">
+                    <p>Saya adalah seorang pengembang web kreatif yang berfokus pada pengalaman pengguna yang menarik.</p>
+                    <a href="cv.html" class="cv-button">Lihat CV Saya</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Keahlian</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-bootstrap"></i>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-php"></i>
+                    <span>PHP</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="organization">
+            <h2>Pengalaman Organisasi</h2>
+            <div class="org-container">
+                <div class="org-item">
+                    <div class="org-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="org-content">
+                        <h3>LPM Lensa Media</h3>
+                        <p class="org-role">Pimpinan Redaksi</p>
+                        <p class="org-period">2022 - 2023</p>
+                        <p class="org-desc">Memimpin tim redaksi dalam produksi konten jurnalistik, mengelola alur kerja redaksi, dan memastikan kualitas publikasi media kampus.</p>
+                    </div>
+                </div>
+
+                <div class="org-item">
+                    <div class="org-icon">
+                        <i class="fas fa-star-and-crescent"></i>
+                    </div>
+                    <div class="org-content">
+                        <h3>IPNU Ranting</h3>
+                        <p class="org-role">Wakil Ketua</p>
+                        <p class="org-period">2021 - 2022</p>
+                        <p class="org-desc">Mendampingi ketua dalam mengelola organisasi, mengkoordinasi program kerja, dan mengembangkan potensi anggota di tingkat ranting.</p>
+                    </div>
+                </div>
+
+                <div class="org-item">
+                    <div class="org-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <div class="org-content">
+                        <h3>IPNU PAC</h3>
+                        <p class="org-role">Anggota</p>
+                        <p class="org-period">2020 - 2021</p>
+                        <p class="org-desc">Berpartisipasi aktif dalam kegiatan organisasi dan program pengembangan kepemudaan di tingkat kecamatan.</p>
+                    </div>
+                </div>
+
+                <div class="org-item">
+                    <div class="org-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="org-content">
+                        <h3>Karang Taruna Ganesa Putra</h3>
+                        <p class="org-role">Anggota</p>
+                        <p class="org-period">2019 - Sekarang</p>
+                        <p class="org-desc">Berkontribusi dalam kegiatan sosial kemasyarakatan dan pengembangan potensi pemuda di lingkungan desa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Proyek</h2>
+            <div class="projects-grid">
+                <!-- Mobile Projects -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-hand-holding-medical"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Aplikasi Sentra Donor</h3>
+                        <div class="project-tech">
+                            <span><i class="fab fa-flutter"></i> Flutter</span>
+                            <span><i class="fas fa-database"></i> SQLite</span>
+                            <span><i class="fas fa-mobile-alt"></i> Android/iOS</span>
+                        </div>
+                        <p class="project-desc">
+                            Aplikasi mobile untuk menghubungkan pendonor dengan yang membutuhkan donor darah, dengan penyimpanan lokal menggunakan SQLite.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Management Systems -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Management Toko Bunga</h3>
+                        <div class="project-tech">
+                            <span><i class="fab fa-flutter"></i> Flutter</span>
+                            <span><i class="fas fa-database"></i> SQLite</span>
+                            <span><i class="fas fa-mobile-alt"></i> Android/iOS</span>
+                        </div>
+                        <p class="project-desc">
+                            Aplikasi manajemen toko bunga dengan fitur inventory, penjualan, dan laporan keuangan berbasis mobile.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Management Mebel</h3>
+                        <div class="project-tech">
+                            <span><i class="fab fa-flutter"></i> Flutter</span>
+                            <span><i class="fas fa-database"></i> SQLite</span>
+                            <span><i class="fas fa-mobile-alt"></i> Android/iOS</span>
+                        </div>
+                        <p class="project-desc">
+                            Aplikasi manajemen untuk toko mebel dengan fitur katalog produk, pemesanan, dan tracking produksi.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Management Lapangan Futsal</h3>
+                        <div class="project-tech">
+                            <span><i class="fab fa-flutter"></i> Flutter</span>
+                            <span><i class="fas fa-database"></i> SQLite</span>
+                            <span><i class="fas fa-calendar-alt"></i> Booking System</span>
+                        </div>
+                        <p class="project-desc">
+                            Aplikasi booking lapangan futsal dengan sistem penjadwalan dan manajemen member berbasis mobile.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Management PlayStation</h3>
+                        <div class="project-tech">
+                            <span><i class="fab fa-flutter"></i> Flutter</span>
+                            <span><i class="fas fa-database"></i> SQLite</span>
+                            <span><i class="fas fa-clock"></i> Time Tracking</span>
+                        </div>
+                        <p class="project-desc">
+                            Aplikasi manajemen rental PlayStation dengan sistem billing per jam dan inventory game.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Management Rental Mobil</h3>
+                        <div class="project-tech">
+                            <span><i class="fab fa-php"></i> PHP</span>
+                            <span><i class="fas fa-database"></i> MySQL</span>
+                            <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        </div>
+                        <p class="project-desc">
+                            Sistem manajemen rental mobil dengan fitur booking, tracking kendaraan, dan manajemen pembayaran.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <div class="contact-info">
+                <a href="mailto:randyekasaputra250904@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>email</span>
+                </a>
+                <a href="https://github.com/randyekasaputra">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/username">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://wa.me/082244482470">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="https://instagram.com/randyy_es">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
